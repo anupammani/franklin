@@ -7,6 +7,9 @@
   width: 100%;
 }
 
+.columns p{
+  padding: 0 20px;
+}
 .columns > div > div {
   order: 1;
 }
@@ -17,6 +20,8 @@
 
 .columns > div > .columns-img-col img {
   display: block;
+  height: 100%;
+  width: 100%;
 }
 
 @media (width >= 900px) {

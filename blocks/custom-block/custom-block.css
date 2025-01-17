@@ -1,0 +1,40 @@
+ .custom-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.custom-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-section div {
+  flex: 1;
+  padding: 10px;
+}
+
+.custom-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.custom-section p {
+  font-size: 1em;
+}
+
+.custom-section a.button {
+  display: inline-block;
+  background-color: #f0c040;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.custom-section a.button:hover {
+  background-color: #e0b030;
+}

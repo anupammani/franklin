@@ -1,0 +1,30 @@
+.vaccine-finder-container {
+  position: relative;
+  padding: 40px;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.vaccine-finder-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.vaccine-finder-content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.vaccine-finder-content a {
+  color: #00f;
+  text-decoration: none;
+}
+
+.vaccine-finder-content a:hover {
+  text-decoration: underline;
+}

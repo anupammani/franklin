@@ -1,0 +1,104 @@
+.tile-card > .tile-card-container {
+  display: grid; /* Grid layout for a two-column structure */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 40px; /* Increase space between cards */
+  justify-content: center; /* Center-align the content */
+  align-items: start; /* Align items at the top */
+  background-color: #1e766e; /* Dark teal background */
+  padding: 60px 80px; /* Larger padding around the container */
+  border-radius: 8px;
+}
+
+.tile-card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px; /* Add padding inside each card for balanced spacing */
+}
+
+.tile-card-title {
+  font-size: 20px; /* Slightly larger font size for the title */
+  font-weight: bold;
+  margin-bottom: 16px; /* Spacing between title and description */
+  color: #333;
+}
+
+.tile-card-description {
+  font-size: 16px; /* Slightly larger font size for readability */
+  color: #555; /* Slightly darker text color */
+  margin-bottom: 24px; /* Spacing between description and button */
+  line-height: 1.6; /* Improved readability with line height */
+}
+
+.tile-card-button {
+  background-color: #ffc107; /* Bright yellow button */
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px; /* Larger padding for the button */
+  font-size: 15px; /* Slightly larger font size */
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 auto 24px auto; /* Space below button and center alignment */
+  display: inline-block;
+}
+
+.tile-card-button:hover {
+  background-color: #ffca28; /* Slightly darker yellow on hover */
+}
+
+.tile-card-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 16px; /* Add spacing between button and image */
+}
+
+.tile-card-image picture img {
+  width: 100%;
+  border-radius: 12px; /* Rounded corners for the image */
+}
+
+.actor-label {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Adjust spacing for smaller screens */
+@media (max-width: 768px) {
+  .tile-card > .tile-card-container {
+    grid-template-columns: 1fr; /* Switch to single-column layout */
+    gap: 24px; /* Reduce gap between cards */
+    padding: 40px 20px; /* Reduce padding for smaller screens */
+  }
+
+  .tile-card {
+    padding: 20px; /* Adjust card padding for smaller screens */
+  }
+
+  .tile-card-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .tile-card-description {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .tile-card-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
