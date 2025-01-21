@@ -1,0 +1,27 @@
+ .stay-connected-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.stay-connected-images {
+  display: flex;
+  gap: 10px;
+}
+
+.stay-connected-images img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.stay-connected-text h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.stay-connected-text p {
+  font-size: 16px;
+  color: #555;
+}

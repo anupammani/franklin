@@ -1,0 +1,12 @@
+ .indication-container {
+  margin-bottom: 10px;
+  padding: 2rem;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
