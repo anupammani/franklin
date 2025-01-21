@@ -1,0 +1,37 @@
+.cta-container {
+  background-color: #e0f7fa; /* Update to the desired background color */
+  padding: 3rem;
+}
+
+.cta.block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.cta-icon img {
+  width: 40px;
+  margin-bottom: 10px; /* Adjust spacing */
+}
+
+.cta-text {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+@media (min-width: 600px) {
+  .cta {
+    flex-direction: row; /* Switch to horizontal on larger screens */
+    padding: 30px;
+  }
+
+  .cta-icon img {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}

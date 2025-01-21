@@ -1,0 +1,20 @@
+ .consent-container {
+  margin-top: 10px;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.sign-up-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #fdd756;
+  color: #415364;
+  border: none;
+  border-radius: 46px;
+  cursor: pointer;
+}
+
+.sign-up-button:hover, .sign-up-button:active,.sign-up-button:focus{
+  background-color: #feebaa;
+}
