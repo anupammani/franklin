@@ -28,9 +28,11 @@
   width: calc(100% - 285px);
   padding-bottom: 0;
   height: 80px;
-  overflow-y: auto;
 }
 
+.information[data-state='expanded']{
+  overflow-y: auto;
+}
 
 .information[data-state='expanded'] button{
   padding-top: 12px;
