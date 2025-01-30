@@ -34,6 +34,10 @@
   overflow-y: auto;
 }
 
+.information[data-state='expanded']{
+  overflow-y: auto;
+}
+
 .information[data-state='expanded'] button{
   padding-top: 12px;
 }

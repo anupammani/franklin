@@ -11,10 +11,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
   box-sizing: border-box;
+  font-size: 14px;
+}
+
+nav .section{
+  padding: 0 20px;
 }
 
 @media only screen and (max-width: 1099px) {
@@ -92,8 +96,6 @@ nav ul li {
 .nav-wrapper nav ul li a {
   text-decoration: none !important; /* Remove default text-decoration */
   color: #415364 !important; /* Force color for all links */
-  font-size: 16px;
-  font-weight: 500;
   padding: 0.5rem 0;
   display: block;
   transition: text-decoration 0.2s ease;
@@ -128,7 +130,6 @@ nav ul li {
     bottom: 0;
     left: -20px;
     right: -14px;
-    height: 110%;
     background-color: #f5f5f5;
     z-index: -1;
 }
@@ -174,10 +175,10 @@ nav .button-container {
 
 nav .button-container .button {
   display: block;
-  background-color: #ffc107;
-  color: #333;
-  padding: 12px 24px;
-  font-size: 16px;
+  background-color: #624B78;
+  color: #fff;
+  padding: 8px 24px;
+  border: 2px solid #624B78;
   font-weight: bold;
   border-radius: 50px;
   text-align: center;
@@ -186,7 +187,9 @@ nav .button-container .button {
 }
 
 nav .button-container .button:hover {
-  background-color: #ffca28;
+  background-color: #fff;
+  color: #624B78;
+  border: 2px solid #624B78;
 }
 
 /* Responsive Design */
@@ -198,6 +201,7 @@ nav .button-container .button:hover {
 
 .nav-utility-link ul li a{
   padding: 0!important;
+  font-weight: 500;
 }
 
 .nav-utility-link ul li{
@@ -227,10 +231,41 @@ nav .button-container .button:hover {
   max-height: 80px;
 }
 
-.nav-utility-link ul li:last-child::before{
-  border: none;
-  width: 100%;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  left: -20px;
+.navSocial ul{
+  display: flex;
+}
+
+.navSocial li{
+  width: auto;
+}
+
+.social-button{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+  border: 2px solid #624B78;
+  border-radius: 100vw;
+}
+
+.social-button:hover{
+  background-color: #624B78;
+  color: #fff;
+}
+
+.social-icon{
+    display: inline-flex;
+    justify-content: center;
+    width: 2rem;
+    height: 1.2rem;
+    vertical-align: sub;
+}
+
+.social-icon:hover svg{
+  fill: #fff;
 }
